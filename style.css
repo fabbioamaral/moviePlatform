@@ -12,7 +12,7 @@ header.container{
 }
 
 .header-area{
-    background-color: rgba(223, 223, 223, 0.89);
+    background-color: rgba(114, 110, 110, 0.452);
     height: 70px;   
 }
 
@@ -26,6 +26,15 @@ header.container{
 
 #menu{
     margin-top:15px; 
+}
+
+#menu ul a{
+    color:black;
+    transition:color 300ms ease-in-out;
+}
+
+#menu ul a:hover{
+    color:white;
 }
 
 #searchBoxDiv input{
@@ -152,6 +161,11 @@ header.container{
 
 /* Section Lançamentos - Início */ 
 
+.releases-area{
+    background-color: rgba(223, 223, 223, 0.89);
+    padding-bottom:50px;    
+}
+
 h1{
     text-align: center;
 }
@@ -161,18 +175,12 @@ h1{
 #MiCarousel{
     height:315px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
 }
 .carousel-img{
-    background-color: #000;
-    color: #fff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 80%;
-    height: 100%;
-    position: absolute;
+    height: 100%;    
     opacity: 0.8;    
 }
 
@@ -180,7 +188,8 @@ h1{
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
-    height:310px;   
+    height:310px;
+       
 }
 
 .carousel-title{
@@ -226,4 +235,14 @@ h1{
   color: orange;
 }
 
+/* Media Query to set responsiveness of the section lançamentos */ 
 
+@media screen and (max-width:991px) {
+    .div-r{
+        margin-top:60px;
+    }
+
+    .releases-area{
+    text-align: center;
+}
+}
