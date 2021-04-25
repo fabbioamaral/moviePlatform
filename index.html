@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Platform</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 header-area">
+                <div class="row">
+                    <div class="col-lg-1 col-xl-2 logoDesktop" id="logoDiv">
+                        <img src="./logo.png" alt="Logo" id="logo">
+                    </div>
+
+                    <div class="col-lg-9 col-xl-7" id="menu">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Lançamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Em Destaque</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Avaliações</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entrevistas & Making-Of</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Novidades</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-xl-3" id="searchBoxDiv">
+                        <input type="text" name="search" placeholder="Pesquisar...">
+                        <img src="./eraseSearchBox.png" alt="Icon - Erase input content" id="eraseInputIcon">
+                        <img src="./searchBox.png" alt="Icon - Search" id="searchInputIcon">
+
+                    </div>
+
+                    <!-- HTML for the header menu on mobile and tablet design -->
+
+                    <div class="col-2 menuMobile open" id="menuMobileId">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="col-8 logoMenuDiv hide" id="logoMenuId">
+                        <img src="./logo.png" alt="Logo" id="logoMobile">
+                    </div>
+
+                    <div class="col-8 searchFieldDiv" id="inputSearchFieldId">
+                        <input type="text" name="search" placeholder="Pesquisar..." id="inputMobile">
+                    </div>
+
+                    <div class="col-2 searchIconMobileDiv">
+                        <img src="./searchBox.png" alt="Icon - Search" id="searchInputIconMobile">
+                    </div>
+
+                    <div class="col-12"  id="linksMenuMobileId">
+                        <nav class="nav flex-column"> 
+                            <a class="nav-link" href="#">Lançamento</a>
+                            <a class="nav-link" href="#">Em Destaque</a>
+                            <a class="nav-link" href="#">Avaliações</a>
+                            <a class="nav-link" href="#">Entrevistas & Making-Of</a>
+                            <a class="nav-link" href="#">Novidades</a>
+                            
+                        </nav>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+                <section class="container-fluid releases">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Lançamentos</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 carousel">
+                            <div class="main">
+                                <div class="container">
+                                    <div class="row"> 
+                                        <div class="col-md-12">
+                                            <div id="MiCarousel" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#MiCarousel" data-slide-to="0" class="carousel-pagination active"></li>
+                                                    <li data-target="#MiCarousel" data-slide-to="1" class="carousel-pagination"></li>
+                                                    <li data-target="#MiCarousel" data-slide-to="2" class="carousel-pagination"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-md-6 div-l">
+                                                                <div class="carousel-img">
+                                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sX1_buHj3wA" title="YouTube video player"
+                                                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>                                                        
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 div-r">
+                                                                <h3>Mortal Kombat</h3>
+                                                                <hr>
+                                                                <p><span class='sinopse'>Sinopse:</span> Os planetas estão desalinhados. Para deter as forças do mal e salvar a humanidade, Lord Rayden, o protetor da Terra,
+                                                                escolhe as três pessoas capazes de vencer o Mortal Kombat, disputado pelos melhores lutadores do universo.</p>
+                                                                <p>
+                                                                    <span class="diretor">Diretor:</span><span style="padding-right:15px"> Paul W. S. Anderson</span>
+                                                                    <span class="roteiro">Roteiro:</span><span style="padding-right:15px"> Greg Russo</span>
+                                                                    <span class="estreia">Estreira:</span><span> 2021</span>
+                                                                </p>
+                                                                <p class='avaliacao'>Avaliação:</p>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-md-6 div-l">
+                                                                <div class="carousel-img">
+                                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eHCAgSuLog4" title="YouTube video player"
+                                                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 div-r">
+                                                                <h3>Batman: Alma do Dragão</h3>
+                                                                <hr>
+                                                                <p><span class='sinopse'>Sinopse:</span> Batman enfrenta inimigos do passado com a ajuda de três antigos colegas: o treinador de artes marciais Richard Dragon,
+                                                                Ben Turner e Lady Shiva.</p>
+                                                                <p>
+                                                                    <span class="diretor">Diretor:</span><span style="padding-right:15px"> Paul W. S. Anderson</span>
+                                                                    <span class="roteiro">Roteiro:</span><span style="padding-right:15px"> Greg Russo</span>
+                                                                    <span class="estreia">Estreira:</span><span> 2021</span>
+                                                                </p>
+                                                                <p class='avaliacao'>Avaliação:</p>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-md-6 div-l">
+                                                                <div class="carousel-img">
+                                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oySHRt64xLk" title="YouTube video player"
+                                                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                        allowfullscreen></iframe>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 div-r">
+                                                                <h3>Velozes & Furiosos 9</h3>
+                                                                <hr>
+                                                                <p><span class='sinopse'>Sinopse:</span> O longa vem dando continuidade às corridas eletrizantes da equipe de amigos liderada por Dominic Toretto.</p>
+                                                                <p>
+                                                                    <span class="diretor">Diretor:</span><span style="padding-right:15px"> Justin Lin</span>
+                                                                    <span class="roteiro">Roteiro:</span><span style="padding-right:15px"> Chris Morgan</span>
+                                                                    <span class="estreia">Estreira:</span><span> 2021</span>
+                                                                </p>
+                                                                <p class='avaliacao'>Avaliação:</p>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                        
+
+                                                </div>
+                                                <a class="carousel-control-prev carousel-controls" href="#carouselExampleIndicators" role="button"
+                                                    data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next carousel-controls" href="#carouselExampleIndicators" role="button"
+                                                    data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 sinopse">
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

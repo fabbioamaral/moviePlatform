@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Menu Header CSS - Início */
+
+header.container{
+    margin-left:0;
+    margin-right:0px;
+    padding:0;
+    width:100%;       
+}
+
+.header-area{
+    background-color: rgba(223, 223, 223, 0.89);
+    height: 70px;   
+}
+
+#searchInputIconMobile, #logoMobile, #inputMobile {
+    display:none;
+}
+
+#searchBoxDiv{
+    position:relative;       
+}
+
+#menu{
+    margin-top:15px; 
+}
+
+#searchBoxDiv input{
+    width:90%;
+    margin-top:20px;  
+    padding-left: 25px; 
+}
+
+#searchBoxDiv input::placeholder{    
+    font-size:12px;  
+}
+
+#searchBoxDiv #searchInputIcon{
+    width:15px;
+    position:absolute;
+    top:29px;
+    left:20px;
+}
+
+#searchBoxDiv #eraseInputIcon{
+    width:15px;
+    position:absolute;
+    top:28px;
+    right:55px;
+}
+
+/* Media Query to set responsiveness of the header menu */ 
+
+/*Media Query to Adjust the Erase Icon between 992px and 1200px*/ 
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    #eraseInputIcon{
+        right:40px;    
+}}
+
+/*Media Query to hide menu links in desktop layout*/
+
+@media screen and (min-width: 991px){
+    #linksMenuMobileId{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    
+    #menu, #logo, #searchBoxDiv #eraseInputIcon,#searchBoxDiv #searchInputIcon, #searchBoxDiv input{
+        display:none;
+    }
+
+    .menuMobile{
+        padding-top:10px;
+    }
+
+    .menuMobile> span{
+        display: block;
+        width: 26px;
+        height: 4px;
+        background-color: black;
+        transition:all 300ms ease-in-out;
+        transform-origin:0.5px 2px;
+        border-radius:10px;        
+    }
+
+    .menuMobile> span:not(:last-child){
+        margin-bottom: 5px;
+    }
+
+    .menuMobile.open> span:first-child{
+            transform: rotate(45deg);
+    }
+
+    .menuMobile.open> span:nth-child(2){
+        opacity:0;
+    }
+
+    .menuMobile.open> span:last-child{
+        transform: rotate(-45deg);      
+    }
+
+    #logoMobile{        
+        display:block;
+        height:40px;
+        margin-bottom:5px;
+        padding-top:3px;
+        padding-left:100px;
+    }
+
+    .searchIconMobileDiv{
+        padding-top:5px;
+        padding-right:10px;               
+    }
+
+    #searchInputIconMobile{
+        display:block;
+        width:20px;  
+    }
+
+    #inputSearchFieldId{
+        height:45px;
+    }
+
+    #inputMobile{
+        display:block;
+        width:100%;        
+    }
+
+    .hide{
+        display:none;
+    }
+
+    #linksMenuMobileId{        
+        margin-top:25px;
+        text-align: center;
+        background-color: rgb(0, 0, 0,0.9);
+        z-index:999;
+    }
+
+    #linksMenuMobileId>nav>a{
+        color:white;
+    }
+}
+
+/* Menu Header CSS - Fim */
+
+
+/* Section Lançamentos - Início */ 
+
+h1{
+    text-align: center;
+}
+
+/*Carousel*/ 
+
+#MiCarousel{
+    height:315px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.carousel-img{
+    background-color: #000;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;    
+}
+
+.div-r{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    height:310px;   
+}
+
+.carousel-title{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.carousel-pagination{
+    background-color: #000 !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100%;
+    position: relative;
+    bottom: -50px;
+    opacity: 0.5;
+}
+
+.carousel-pagination.active{
+    opacity: 1;   
+}
+
+.carousel-controls{
+    display: none;
+}
+
+.sinopse,.avaliacao, .diretor, .roteiro,.estreia{
+    font-weight: bold;
+}
+
+.releases h1{
+    margin-top:15px;
+}
+
+.avaliacao{
+    margin-bottom:5px;
+}
+
+/*stars review*/
+
+.checked {
+  color: orange;
+}
+
+
