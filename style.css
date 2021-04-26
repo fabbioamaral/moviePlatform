@@ -188,7 +188,7 @@ h1{
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
-    height:310px;
+    max-height:419px;
        
 }
 
@@ -245,4 +245,113 @@ h1{
     .releases-area{
     text-align: center;
 }
+}
+
+/* Section Lançamentos - Fim */ 
+
+/* Section Em Destaque - Início */ 
+
+.highlights{
+    margin-top:20px;
+}
+
+.headline-dropdownList{
+    margin-bottom:20px;
+}
+
+.headline-dropdownList h1{
+    text-align: left;
+    padding-left:80px;
+}
+
+#categorias{
+    width:200px;
+    padding:5px;
+    margin-top:8px;
+    margin-left:55%;
+    border-radius:5px;    
+}
+
+.cards-row{
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.card{
+    padding:0 auto;
+    margin-top: 10px;
+    align-items: center;
+    border:none;    
+}
+
+.card img{
+    width:80%;
+    height:auto;
+}
+
+.button-row{
+   margin-top:20px;
+}
+
+#btn-carregar-mais-filmes{
+    margin-left:78%;
+    margin-bottom:20px;
+}
+
+/* Media Query to set responsiveness of the section Em Destaque */ 
+@media screen and (max-width:991px) {
+    .highlights{
+        margin-top:340px;
+        background-color: rgba(223, 223, 223, 0.89);
+        text-align: center;
+    }
+
+    .headline-dropdownList h1{
+        text-align: center;
+        padding-left:0;
+        margin-top:20px;
+}
+
+    #categorias{
+        margin-left: 0;
+        
+    }
+
+    .card{
+        background-color: transparent;
+    }
+
+    .card img{
+        width:60%;
+        height:auto;
+    }
+
+    #btn-carregar-mais-filmes{
+        margin-left:0;
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .card{
+        margin-bottom:20px;
+    }
+    
+    .card img{
+        width:50%;
+        height:auto;
+    }   
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .card{
+        margin-bottom:20px;
+    }
+
+    .card img{
+        width:80%;
+        height:auto;
+    }   
+    
 }

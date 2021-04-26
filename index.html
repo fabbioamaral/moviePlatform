@@ -58,11 +58,11 @@
                         <span></span>
                     </div>
 
-                    <div class="col-8 logoMenuDiv hide" id="logoMenuId">
+                    <div class="col-8 logoMenuDiv" id="logoMenuId">
                         <img src="./logo.png" alt="Logo" id="logoMobile">
                     </div>
 
-                    <div class="col-8 searchFieldDiv" id="inputSearchFieldId">
+                    <div class="col-8 searchFieldDiv hide" id="inputSearchFieldId">
                         <input type="text" name="search" placeholder="Pesquisar..." id="inputMobile">
                     </div>
 
@@ -70,7 +70,7 @@
                         <img src="./searchBox.png" alt="Icon - Search" id="searchInputIconMobile">
                     </div>
 
-                    <div class="col-12"  id="linksMenuMobileId">
+                    <div class="col-12 hide"  id="linksMenuMobileId">
                         <nav class="nav flex-column"> 
                             <a class="nav-link" href="#">Lançamento</a>
                             <a class="nav-link" href="#">Em Destaque</a>
@@ -89,7 +89,7 @@
 
     </header>
 
-                <section class="container-fluid releases releases-area">
+    <section class="container-fluid releases releases-area">
                     <div class="row">
                         <div class="col-12">
                             <h1>Lançamentos</h1>
@@ -218,7 +218,68 @@
                         </div>
                     </div>
 
-                </section>
+    </section>
+
+    <section class="container-fluid highlights">
+        <div class="row headline-dropdownList">
+            <div class="col-12 col-lg-6">
+                <h1>Em Destaque</h1>
+            </div>
+
+            <div class="col-12 col-lg-6 dropdownList">
+                <select name="categorias" id="categorias">
+                    <option value="Categoria: TODOS" class="optionList">Categoria: TODOS</option>
+                    <option value="Aventura" class="optionList">Aventura</option>
+                    <option value="Romance" class="optionList">Romance</option>
+                    <option value="Comédia" class="optionList">Comédia</option>
+                </select>    
+            </div>
+        </div>
+
+        <div class="row cards-row">
+            <div class="col-12 col-md-6 col-lg-3 card">
+                    <img class="card-img-top" src="./imagens/the-courier.jpg" alt="Card image cap">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 card">
+                    <img class="card-img-top" src="./imagens/violation.jpg" alt="Card image cap">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 card">
+                <img class="card-img-top" src="./imagens/pixie.png" alt="Card image cap">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 card">
+                <img class="card-img-top" src="./imagens/some-kind-of-heaven-.jpg" alt="Card image cap">
+            </div>
+
+        </div>
+
+        <div class="row button-row">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" id="btn-carregar-mais-filmes">+ Carregar mais filmes</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container last-reviews">
+        <div class="row">
+            <div class="col-12">
+                <h1>Últimas avaliações</h1>
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="col-12 ">
+
+            </div>
+        </div>
+
+    </section>
+
+
 
 
 
