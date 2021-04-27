@@ -457,6 +457,7 @@ h1{
 
 #buttonMaisAvaliacoesId button{
     margin-right:25px;
+    margin-bottom:20px;
 }
 
 /* Media Query to set responsiveness of the section Ultimas Avaliações */
@@ -486,3 +487,43 @@ h1{
 
 }
 
+/* Section Ultimas Avaliações - Fim */ 
+
+/* Section Entrevistas & Making-Of - Início */ 
+
+.rowEntrevistas{
+    display:flex;
+    justify-content: center;
+}
+
+.entrevistas-makingOf h1{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.nomeDoFilmeParagraph{
+    font-size:20px;
+}
+
+.nomeDoFilmeParagraph{
+    margin-bottom:10px;
+}
+
+.diretorParagraph{
+    margin-bottom:0;
+}
+
+#btn-carregar-mais-entrevistas{
+    margin-top:20px;
+}
+
+/* Media Query to set responsiveness of the section Entrevistas & Making-Of */
+
+@media screen and (max-width:1199px) {
+    
+    .entrevistas-makingOf{
+    background-color: rgba(223, 223, 223, 0.89);  
+    }
+
+
+}
