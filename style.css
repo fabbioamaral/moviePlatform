@@ -217,7 +217,7 @@ h1{
     display: none;
 }
 
-.sinopse,.avaliacao, .diretor, .roteiro,.estreia{
+.sinopse,.avaliacao, .diretor, .roteiro,.estreia,.avaliacao{
     font-weight: bold;
 }
 
@@ -355,3 +355,134 @@ h1{
     }   
     
 }
+
+/* Section Em Destaque - Fim */ 
+
+/* Section Últimas Avaliações - Início */ 
+
+.last-reviews{
+    background-color: rgba(223, 223, 223, 0.89);
+    margin-left:0;
+    margin-right:0;    
+}
+
+.last-reviews h1{
+    margin-top:20px;
+}
+
+.ultimasAvalicoesRow{
+    margin-left:15px;
+}
+
+.testimonialDiv{
+    height: auto;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius:10px;
+    margin-bottom:20px;
+    margin-top:20px;
+    padding-bottom:20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: black;    
+}
+
+.testimonialId{
+    display:flex;
+    flex-direction:row;
+}
+
+.testmonialIdentification{
+    padding-top: 35px;
+    padding-bottom: 5px;
+    margin-top:20px;
+}
+
+.buyerPhoto{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right: 20px;        
+}
+
+.buyerName{
+    padding-top:10px;
+    font-size:25px;
+    font-weight: 700;
+    margin-bottom:0px;       
+}
+
+#adrianoAlvesPhoto{
+    background-image: url("./imagens/image-adriano.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;    
+}
+
+#cristinaMoreiraPhoto{
+    background-image: url("./imagens/image-cristina.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+#leticiaSilvaPhoto{
+    background-image: url("./imagens/image-leticia.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.testimonialParagraph{
+    margin-top:15px;
+    line-height: 25px;
+    width: 90%;
+    padding-left: 10px;    
+}
+
+.filmeAvaliacao{
+    text-align: center;
+}
+
+.ultimas-avaliacao{
+    padding-left:10px;
+}
+
+.data-avaliacao{
+    margin-left:15px;
+    font-weight: bold;
+}
+
+#buttonMaisAvaliacoesId{
+    display:flex;
+    justify-content: flex-end;
+}
+
+#buttonMaisAvaliacoesId button{
+    margin-right:25px;
+}
+
+/* Media Query to set responsiveness of the section Ultimas Avaliações */
+
+@media screen and (max-width:1199px) {
+    
+    .last-reviews{
+    background-color: rgba(255, 255, 255, 0.973);  
+    }
+
+    .testimonialDiv{
+    background-color:rgba(223, 223, 223, 0.89);
+    }
+    
+    .ultimasAvalicoesRow{
+        margin-left:0px;
+    }   
+
+    .avaliacaoCard, #buttonMaisAvaliacoesId{
+        display:flex;
+        justify-content: center;
+    }
+
+    #buttonMaisAvaliacoesId button{
+    margin-right:0;
+}
+
+}
+
