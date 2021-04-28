@@ -524,6 +524,160 @@ h1{
     .entrevistas-makingOf{
     background-color: rgba(223, 223, 223, 0.89);  
     }
+}
 
+/* Section Entrevistas & Making-Of - Fim */ 
 
+/* Section Novidades-Sobre - Início */ 
+
+.novidades-sobre{
+    background-color:rgba(223, 223, 223, 0.89);
+    padding-left:50px;    
+}
+
+.novidades-sobre h1{
+    margin-top:20px;
+    padding-left:25px;
+    text-align: left;
+}
+
+.imagem-conteudo{
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+}
+
+.imagem-materia{
+    width:45%;
+    height:auto;
+}
+
+.imagem-materia img{
+    width:100%;
+    margin-top:8px;
+}
+
+.conteudo-materia{
+    width:60%;
+    margin-left:30px;
+}
+
+.tagsDiv{
+    margin-top:5px;
+    display:flex;    
+}
+
+.tags{
+    margin-right:10px;
+    background-color: #6c757d;
+    color:white;
+    border-radius:20px;
+    padding:3px 20px;
+}
+
+.descricaoMateria{
+    margin-bottom:20px;
+}
+
+.sobre-texto{
+    padding:15px 70px 15px 30px;    
+}
+
+.sobre-texto h2{
+    margin-bottom:15px;
+}
+
+.sobreParagrafo{
+    margin-top:5px;
+}
+
+.editorialDiv{
+    margin-bottom:20px;
+}
+
+.editorialSubDiv{
+    display:flex;
+    align-items: center;
+}
+
+.editorialDiv img{
+    width:15px;
+    height:16.35px;     
+}
+
+.editorialParagrah{
+    margin-bottom:0px;
+    margin-left:10px;
+}
+
+.redes-sociais-links{
+    margin-right:20px;
+}
+
+.redes-sociais-links img{
+    width:50px;
+    height:auto;
+}
+
+/* Media Query to set responsiveness of the section Novidades */
+
+@media screen and (max-width:1199px) {
+
+.novidades-sobre{
+    background-color:rgba(255, 255, 255, 0.973);      
+}
+
+.imagem-conteudo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.novidades-sobre h1{
+    padding-left:0;
+    text-align:center;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+.imagem-materia{
+    width:100%;
+    height:auto;
+
+}
+
+.imagem-materia img{
+    width:100%;
+    margin-top:8px;    
+}
+
+.conteudo-materia{
+    margin-top:20px;
+    width:100%;
+    margin-left:0px;
+}
+
+}
+
+@media screen and (min-width:769px) and (max-width:1199px){
+.imagem-materia{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;    
+}
+
+.imagem-materia img{
+    max-width:60%;
+    margin-top:8px;
+    
+}
+
+.conteudo-materia{
+    margin-top:20px;
+    width:100%;
+    margin-left:0px;
+}
 }
