@@ -183,7 +183,6 @@ h1{
     height:315px;
     margin-top: 30px;
     margin-bottom: 10px;
-
 }
 .carousel-img{
     width: 80%;
@@ -244,6 +243,7 @@ h1{
 /* Media Query to set responsiveness of the section lançamentos */ 
 
 @media screen and (max-width:991px) {
+        
     .div-r{
         margin-top:60px;
     }
