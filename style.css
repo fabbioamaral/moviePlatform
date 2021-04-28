@@ -84,7 +84,7 @@ header.container{
     }
 
     .menuMobile{
-        padding-top:10px;
+        padding-top:10px;        
     }
 
     .menuMobile> span{
@@ -113,22 +113,29 @@ header.container{
         transform: rotate(-45deg);      
     }
 
+    .logoMenuDiv{
+        display:flex;
+        justify-content: center;
+    }
+
     #logoMobile{        
-        display:block;
-        height:40px;
+        display:block;        
+        height:60px;
         margin-bottom:5px;
-        padding-top:3px;
-        padding-left:100px;
+        padding-top:3px;        
     }
 
     .searchIconMobileDiv{
-        padding-top:5px;
-        padding-right:10px;               
+        display:flex;
+        justify-content: flex-end;
+        padding-top:15px;
+        padding-right:25px;               
     }
 
     #searchInputIconMobile{
         display:block;
-        width:20px;  
+        width:20px;
+        height:20px;  
     }
 
     #inputSearchFieldId{
@@ -188,8 +195,7 @@ h1{
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
-    max-height:419px;
-       
+    max-height:419px;       
 }
 
 .carousel-title{
@@ -245,6 +251,11 @@ h1{
     .releases-area{
     text-align: center;
 }
+}
+
+@media screen and (min-width: 720px) and (max-width:991px){
+    
+
 }
 
 /* Section Lançamentos - Fim */ 
@@ -719,3 +730,5 @@ h1{
 }
     
 }
+
+/* Footer - Fim */ 

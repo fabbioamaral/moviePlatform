@@ -1,5 +1,7 @@
 /*Nav Menu início*/
 
+/*Sumindo e Parecendo barra de pesquisar em layouts mobile e tablet*/
+
 const menuMobile=document.getElementById('menuMobileId');
 const searchIcon=document.getElementById('searchInputIconMobile');
 
@@ -10,6 +12,7 @@ searchIcon.addEventListener('click',e=>{
     if (searchField.classList.contains('hide')){
         searchField.classList.remove('hide');
         logoMobile.classList.add('hide');
+
     } else {
         searchField.classList.add('hide');
         logoMobile.classList.remove('hide');  
@@ -27,6 +30,8 @@ menuMobile.addEventListener('click',e=>{
         menuMobileLinks.classList.remove('hide');
     }
 })
+
+
 
 /* Nav Menu fim*/ 
 
