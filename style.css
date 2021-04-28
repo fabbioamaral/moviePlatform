@@ -681,3 +681,41 @@ h1{
     margin-left:0px;
 }
 }
+
+/* Section Novidades-Sobre - Fim */ 
+
+/* Footer - Início */ 
+
+.footer-area{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.footerRow{
+   display:flex;   
+   align-items: center; 
+}
+
+.footerRow p {
+    margin-bottom:0;
+}
+
+.copyrightDiv, .logo-footer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Media Query to set responsiveness of Footer */
+
+@media screen and (max-width:1200px) {
+
+.footer-area{
+    background-color:rgba(223, 223, 223, 0.89);    
+}
+
+.copyrightDiv{
+    margin-bottom:20px;
+}
+    
+}
